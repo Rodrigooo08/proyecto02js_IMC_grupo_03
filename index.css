@@ -1,19 +1,36 @@
+:root {
+    --colorBg:  rgb(195, 172, 208) ;
+    --colorBoton1: rgb(41,167,68); 
+    --colorBoton2: rgb(150, 201, 62);
+    --colorLetra1: rgb(103, 65, 136);
+    --colorLetra2: white;
+    --colorBgCalculator:rgb(247, 239, 229) ; 
+    --colorBorder: rgb(103, 65, 136);
+}
 body {
+    background-color: var(--colorBg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
     background-color: rgb(98, 235, 190);
     font-family: Bahnschrift Light SemiCondensed;
     margin: 20px;
 }
+h1{
+    color: var(--colorLetra1);
+    /*background-color: var(--colorLetra1);*/
+}
 .Calculadora {
-    background-color: rgb(77, 152, 217);
+    background-color: var(--colorBgCalculator);
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 10px solid #000000;
+    border: 10px solid var(--colorBorder);
     border-radius: 8px;
+    
 }
 label {
     display: block;
     margin-bottom: 4px;
+    color: var(--colorLetra1);
 }
 input {
     width: 100%;
@@ -37,13 +54,30 @@ button:hover{
     background-color: rgb(162, 238, 178)
 }
 .resultado {
-    background: #ffffff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;
-    color: #000000;
-    text-align: center ;
-    border: 5px solid #000000;
+    color: var(--colorBorder);
+    text-align: center;
+    border: 5px solid var(--colorBorder);
     border-radius: 8px;
     margin: 10px;
 }
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: rgb(117, 115, 184);
+    color: #000000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+button:hover {
+    background-color: var(--colorBg);
+}   

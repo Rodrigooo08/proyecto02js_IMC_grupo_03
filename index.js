@@ -22,6 +22,21 @@ function mostrarResultado(nombre,apellido,imc,nivelIMC){
     paciente.innerHTML=nombre+' '+apellido+' ';
     let nivelPeso = document.getElementById("nivelPeso");
     nivelPeso.innerHTML=nivelIMC;
+
+    let imagenResultado = document.getElementById("imagenResultado");
+    
+    if (nivelIMC === 'bajo peso') {
+        imagenResultado.src = "imagenes/bajo_peso.png"; // Cambia la ruta por la correcta
+    } else if (nivelIMC === 'peso saludable') {
+        imagenResultado.src = "imagenes/peso_saludable.png";
+    } else if (nivelIMC === 'sobrepeso') {
+        imagenResultado.src = "imagenes/sobrepeso.png";
+    } else if (nivelIMC === 'obesidad') {
+        imagenResultado.src = "imagenes/obesidad.png";
+    }
+
+    // Mostrar la imagen
+    imagenResultado.style.display = "block";
 }
  // Validar los valores ingresados
  if (!nombre || !apellido || isNaN(peso) || isNaN(altura) || altura <= 0) {
