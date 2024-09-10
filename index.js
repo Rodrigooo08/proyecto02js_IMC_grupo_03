@@ -23,6 +23,11 @@ function mostrarResultado(nombre,apellido,imc,nivelIMC){
     let nivelPeso = document.getElementById("nivelPeso");
     nivelPeso.innerHTML=nivelIMC;
 }
+ // Validar los valores ingresados
+ if (!nombre || !apellido || isNaN(peso) || isNaN(altura) || altura <= 0) {
+    alert('Por favor, ingrese todos los datos correctamente.');
+    return;
+}
 
 function resolver() {
     // Obtener los valores del formulario
