@@ -29,6 +29,11 @@ input {
     border-radius: 8px;
     margin: 10px;
 }
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 button {
     background-color: rgb(117, 115, 184);
     color: #000000;
