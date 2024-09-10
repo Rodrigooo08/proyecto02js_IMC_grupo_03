@@ -10,8 +10,6 @@
 body {
     background-color: var(--colorBg);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
-    background-color: rgb(98, 235, 190);
-    font-family: Bahnschrift Light SemiCondensed;
     margin: 20px;
 }
 h1{
