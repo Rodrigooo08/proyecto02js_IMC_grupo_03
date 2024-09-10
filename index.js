@@ -45,6 +45,12 @@ function resolver() {
     let apellido = document.getElementById("valorApellido").value;
     let peso = parseFloat(document.getElementById("valorPeso").value);
     let altura = parseFloat(document.getElementById("valorAltura").value);
+     // Validar los valores ingresados
+ if (!nombre || !apellido || isNaN(peso) || isNaN(altura) || altura <= 0) {
+    alert('Por favor, ingrese todos los datos correctamente.');
+    return;
+}
+
 
     // Calcular el IMC
     let imc = calcularIMC(altura,peso);
