@@ -1,14 +1,22 @@
+:root {
+    --colorBg:  rgb(195, 172, 208) ;
+    --colorBoton: rgb(41,167,68); 
+    --colorLetra1: rgb(150, 201, 62);
+    --colorLetra2: rgb(30,76,102);
+    --colorBgCalculator:rgb(247, 239, 229) ; 
+    --colorBorder: rgb(103, 65, 136);
+}
 body {
-    background-color: rgb(98, 235, 190);
-    font-family: Arial, sans-serif;
+    background-color: var(--colorBg);
+    font-family: Arial, sans-serif var(--colorBorder);
     margin: 20px;
 }
 .Calculadora {
-    background-color: rgb(77, 152, 217);
+    background-color: var(--colorBgCalculator);
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 10px solid #000000;
+    border: 10px solid var(--colorBorder);
     border-radius: 8px;
 }
 label {
@@ -23,9 +31,9 @@ input {
 .resultado {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 20px;
-    color: #000000;
+    color: var(--colorBorder);
     text-align: center;
-    border: 5px solid #000000;
+    border: 5px solid var(--colorBorder);
     border-radius: 8px;
     margin: 10px;
 }
