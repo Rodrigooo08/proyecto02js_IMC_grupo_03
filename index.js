@@ -14,6 +14,16 @@ function determinarNivel(resultado){
     }
     return nivel;
 }
+
+function mostrarResultado(nombre,apellido,imc,nivelIMC){
+    let imcSpan = document.getElementById("imcSpan");
+    imcSpan.innerHTML=imc.toFixed(2);
+    let paciente = document.getElementById("paciente");
+    paciente.innerHTML=nombre+' '+apellido+' ';
+    let nivelPeso = document.getElementById("nivelPeso");
+    nivelPeso.innerHTML=nivelIMC;
+}
+
 function resolver() {
     // Obtener los valores del formulario
     let nombre = document.getElementById("valorNombre").value;
@@ -29,4 +39,5 @@ function resolver() {
     let nivelIMC = '';
     nivelIMC = determinarNivel(imc);
     console.log(nivelIMC);
+    mostrarResultado(nombre,apellido,imc,nivelIMC);
 }
