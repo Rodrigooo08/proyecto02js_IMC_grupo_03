@@ -8,10 +8,13 @@
     --colorBorder: rgb(103, 65, 136);
 }
 body {
-
-    background-color: rgb(98, 235, 190);
+    background-color: var(--colorBg);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
     margin: 20px;
+}
+h1{
+    color: var(--colorLetra1);
+    /*background-color: var(--colorLetra1);*/
 }
 .Calculadora {
     background-color: var(--colorBgCalculator);
@@ -25,6 +28,7 @@ body {
 label {
     display: block;
     margin-bottom: 4px;
+    color: var(--colorLetra1);
 }
 input {
     width: 100%;
@@ -57,5 +61,5 @@ button {
     font-size: 20px;
 }
 button:hover {
-    background-color: rgb(98, 235, 190);
+    background-color: var(--colorBg);
 }   
