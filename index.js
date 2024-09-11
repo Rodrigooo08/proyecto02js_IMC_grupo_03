@@ -4,13 +4,13 @@ function calcularIMC(altura,peso){
 function determinarNivel(resultado){
     let nivel = '';
     if (resultado < 18.5) {
-        nivel = 'bajo peso';
+        nivel = 'Bajo peso';
     } else if (resultado >= 18.5 && resultado <= 24.9) {
-        nivel = 'peso saludable';
+        nivel = 'Peso saludable';
     } else if (resultado >= 25 && resultado <= 29.9) {
-        nivel = 'sobrepeso';
+        nivel = 'Sobrepeso';
     } else {
-        nivel = 'obesidad';
+        nivel = 'Obesidad';
     }
     return nivel;
 }
@@ -27,7 +27,7 @@ function mostrarResultado(nombre,apellido,imc,nivelIMC){
     
     if (nivelIMC === 'bajo peso') {
         imagenResultado.src = "imagenes/bajo_peso.png"; // Cambia la ruta por la correcta
-    } else if (nivelIMC === 'peso saludable') {
+    } else if (nivelIMC === 'Peso saludable') {
         imagenResultado.src = "imagenes/peso_saludable.png";
     } else if (nivelIMC === 'sobrepeso') {
         imagenResultado.src = "imagenes/sobrepeso.png";
