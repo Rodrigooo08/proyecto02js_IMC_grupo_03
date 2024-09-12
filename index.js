@@ -25,13 +25,13 @@ function mostrarResultado(nombre,apellido,imc,nivelIMC){
 
     let imagenResultado = document.getElementById("imagenResultado");
     
-    if (nivelIMC === 'bajo peso') {
+    if (nivelIMC === 'Bajo peso') {
         imagenResultado.src = "imagenes/bajo_peso.png"; // Cambia la ruta por la correcta
     } else if (nivelIMC === 'Peso saludable') {
         imagenResultado.src = "imagenes/peso_saludable.png";
-    } else if (nivelIMC === 'sobrepeso') {
+    } else if (nivelIMC === 'Sobrepeso') {
         imagenResultado.src = "imagenes/sobrepeso.png";
-    } else if (nivelIMC === 'obesidad') {
+    } else if (nivelIMC === 'Obesidad') {
         imagenResultado.src = "imagenes/obesidad.png";
     }
 
