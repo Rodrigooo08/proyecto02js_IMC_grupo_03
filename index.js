@@ -28,7 +28,7 @@ function mostrarResultado(nombre,apellido,imc,nivelIMC){
     if (nivelIMC === 'Bajo peso') {
         imagenResultado.src = "imagenes/bajo_peso.png"; // Cambia la ruta por la correcta
     } else if (nivelIMC === 'Peso saludable') {
-        imagenResultado.src = "imagenes/peso_saludable.png";
+        imagenResultado.src = "imagenes/peso_saludable2.webp";
     } else if (nivelIMC === 'Sobrepeso') {
         imagenResultado.src = "imagenes/sobrepeso.png";
     } else if (nivelIMC === 'Obesidad') {
